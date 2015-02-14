@@ -25,9 +25,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
+import android.content.pm.ResolveInfo;
 import android.database.ContentObserver;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
+import android.media.audiofx.AudioEffect;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -75,6 +77,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
     private static final String KEY_LOCK_SCREEN_NOTIFICATIONS = "lock_screen_notifications";
     private static final String KEY_NOTIFICATION_ACCESS = "manage_notification_access";
+    private static final String KEY_MUSICFX = "musicfx";
 
     private static final int SAMPLE_CUTOFF = 2000;  // manually cap sample playback at 2 seconds
 
@@ -93,6 +96,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
     private Preference mPhoneRingtonePreference;
     private Preference mNotificationRingtonePreference;
+    private Preference mMusicFx;
     private TwoStatePreference mVibrateWhenRinging;
     private TwoStatePreference mNotificationPulse;
     private DropDownPreference mLockscreen;
@@ -123,6 +127,17 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                 com.android.internal.R.drawable.ic_audio_vol_mute);
         initVolumePreference(KEY_ALARM_VOLUME, AudioManager.STREAM_ALARM,
                 com.android.internal.R.drawable.ic_audio_alarm_mute);
+        mMusicFx = sound.findPreference(KEY_MUSICFX);
+        Intent effects = new Intent(AudioEffect.ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL);
+        mMusicFx.setIntent(effects);
+        PackageManager p = getPackageManager();
+        List<ResolveInfo> ris = p.queryIntentActivities(effects, 0);
+        if (ris.size() == 0) {
+            sound.removePreference(mMusicFx);
+        } else if (ris.size() == 1) {
+            mMusicFx.setSummary(ris.get(0).loadLabel(p));
+        }
+
         if (mVoiceCapable) {
             mRingOrNotificationPreference =
                     initVolumePreference(KEY_RING_VOLUME, AudioManager.STREAM_RING,

@@ -84,7 +84,12 @@
                 android:persistent="false"
                 android:fragment="com.android.settings.notification.OtherSoundSettings" />
 
-    </PreferenceCategory>
+    <!-- musicfx Manager -->
+        <Preference
+                android:key="musicfx"
+                android:title="@string/musicfx_title" />
+
+        </PreferenceCategory>
 
     <PreferenceCategory
         android:key="notification"
