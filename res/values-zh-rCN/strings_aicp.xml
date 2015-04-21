@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General strings -->
+    <string name="ok">确认</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">选择颜色</string>
+    <string name="press_color_to_apply">点击下面颜色确认</string>
+    <string name="arrow_right" translatable="false">→</string>
+    <string name="arrow_down" translatable="false">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">设置</string>
+    <string name="color_default">默认</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_vector_title">状态栏网速</string>
+    <string name="network_traffic_vector_summary">在状态栏显示当前网速</string>
+    <string name="show_network_traffic_disable">禁用</string>
+    <string name="show_network_traffic_meter">显示仪表盘</string>
+    <string name="show_network_traffic_text">显示文本</string>
+    <string name="show_network_traffic_both">同时显示仪表盘和字符</string>
+    <string name="show_network_traffic_display">状态栏网速显示</string>
+    <string name="show_network_traffic_monitor">网络状态显示</string>
+    <string name="show_network_traffic_unit">显示单位</string>
+    <string name="show_network_traffic_frequency">刷新频率</string>
+    <string name="show_network_traffic_up">显示上传速度</string>
+    <string name="show_network_traffic_down">显示下载速度</string>
+    <string name="show_network_traffic_all">显示上传和下载速度</string>
+    <string name="show_network_traffic_500">500 毫秒</string>
+    <string name="show_network_traffic_1000">1000 毫秒</string>
+    <string name="show_network_traffic_1500">1500 毫秒</string>
+    <string name="show_network_traffic_2000">2000 毫秒</string>
+    <string name="show_network_traffic_2500">2500 毫秒</string>
+    <string name="show_network_traffic_3000">3000 毫秒</string>
+    <string name="show_network_traffic_bit">Bits每秒</string>
+    <string name="show_network_traffic_byte">Bytes每秒</string>
+    <string name="network_traffic_autohide">自动隐藏</string>
+    <string name="network_traffic_autohide_summary">没有流量的时候不显示网速</string>
+    <string name="network_traffic_autohide_threshold">阈值</string>
+    <string name="network_traffic_color_style">文本颜色风格</string>
+    <string name="network_traffic_color_reset">重置颜色</string>
+    <string name="network_traffic_color_reset_message">重置网速显示颜色为默认颜色?</string>
+
+</resources>
