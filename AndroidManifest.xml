@@ -2098,5 +2098,10 @@
             </intent-filter>
         </provider>
 
+        <!-- Power mode Settings -->
+        <activity
+                android:name=".ivan.PowerModeSettings"
+                android:theme="@android:style/Theme.Material.Dialog">
+        </activity>
     </application>
 </manifest>

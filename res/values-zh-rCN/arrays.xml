@@ -568,4 +568,10 @@
     <item msgid="4608643045752965568">"粉红色"</item>
     <item msgid="6131821495505931173">"红色"</item>
   </string-array>
+
+  <!-- power mode -->
+  <string-array name="power_mode_entries">
+    <item>性能模式</item>
+    <item>均衡模式</item>
+  </string-array>
 </resources>

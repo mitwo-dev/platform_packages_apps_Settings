@@ -2575,4 +2575,6 @@
     <string name="hardware_keys_action_in_app_search">应用内搜索</string>
     <string name="hardware_keys_action_launch_camera">打开相机</string>
     <string name="hardware_keys_action_sleep">灭屏</string>
+
+    <string name="power_mode">CPU运行模式</string>
 </resources>

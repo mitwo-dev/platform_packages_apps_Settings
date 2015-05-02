@@ -60,6 +60,14 @@
             android:fragment="com.android.settings.applications.ProcessStatsUi">
     </PreferenceScreen>
 
+    <Preference
+        android:key="power_mode_settings"
+        android:title="@string/power_mode" >
+        <intent
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.ivan.PowerModeSettings" />
+    </Preference>
+
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">
 
