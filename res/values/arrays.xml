@@ -1322,5 +1322,6 @@
     <string-array name="power_mode_entries">
         <item>Performance Mode</item>
         <item>Normal Mode</item>
+        <item>Power Save Mode</item>
     </string-array>
 </resources>

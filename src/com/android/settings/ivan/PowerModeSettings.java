@@ -16,9 +16,11 @@ public class PowerModeSettings extends Activity {
     public static final String POWER_MODE_KEY_PROPERTY = "persist.sys.aries.power_profile";
     public static final String POWER_MODE_VALUE_HIGH = "high";
     public static final String POWER_MODE_VALUE_MIDDLE = "middle";
+    public static final String POWER_MODE_VALUE_LOW = "low";
     public static final String POWER_MODE_VALUE_DEFAULT = POWER_MODE_VALUE_MIDDLE;
     public static final String[] POWER_MODE_VALUES = {POWER_MODE_VALUE_HIGH,
-                                                          POWER_MODE_VALUE_MIDDLE};
+                                                          POWER_MODE_VALUE_MIDDLE,
+                                                          POWER_MODE_VALUE_LOW};
     private CharSequence[] mEntries;
     private CharSequence[] mEntryValues;
 

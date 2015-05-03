@@ -573,5 +573,6 @@
   <string-array name="power_mode_entries">
     <item>性能模式</item>
     <item>均衡模式</item>
+    <item>省电模式</item>
   </string-array>
 </resources>
