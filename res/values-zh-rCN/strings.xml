@@ -2577,4 +2577,8 @@
     <string name="hardware_keys_action_sleep">灭屏</string>
 
     <string name="power_mode">CPU运行模式</string>
+    <!-- Hardware tunables - Vibrator intensity -->
+    <string name="vibrator_intensity_title">振动器强度</string>
+    <string name="vibrator_warning">不推荐高于 %1$d 的震动强度</string>
+    <string name="auto_reset_button">重置</string>
 </resources>

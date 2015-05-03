@@ -61,4 +61,10 @@
 
     </PreferenceCategory>
 
+    <com.android.settings.ivan.VibratorIntensity
+            android:key="vibration_intensity"
+            android:title="@string/vibrator_intensity_title"
+            android:dialogTitle="@string/vibrator_intensity_title"
+            android:persistent="false" />
+
 </PreferenceScreen>

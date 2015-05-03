@@ -2517,4 +2517,15 @@
     <string name="imei_information_title" msgid="8499085421609752290">"IMEI 資料"</string>
     <string name="imei_information_summary" msgid="2074095606556565233">"IMEI 相對資料"</string>
     <string name="slot_number" msgid="3762676044904653577">"(插槽 <xliff:g id="SLOT_NUM">%1$d</xliff:g>)"</string>
+
+    <string name="power_mode">CPU運行模式</string>
+
+    <string name="screen">屏幕</string>
+    <string name="screen_color_temperature_adjust">色溫調整</string>
+    <string name="screen_color_adjust">屏幕顏色調整</string>
+    <string name="screen_saturation_adjust">飽和度調整</string>
+    <string name="auto_reset_button">重置</string>
+    <!-- Hardware tunables - Vibrator intensity -->
+    <string name="vibrator_intensity_title">振動器強度</string>
+    <string name="vibrator_warning">不不推薦高於%1$d 的震動強度</string>
 </resources>

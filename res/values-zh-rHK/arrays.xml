@@ -535,4 +535,22 @@
     <item msgid="4608643045752965568">"粉紅色"</item>
     <item msgid="6131821495505931173">"紅色"</item>
   </string-array>
+
+    <string-array name="screen_color_title">
+        <item>暖色</item>
+        <item>自然</item>
+        <item>冷色</item>
+    </string-array>
+
+    <string-array name="screen_saturation_title">
+        <item>鮮豔</item>
+        <item>標準</item>
+    </string-array>
+
+  <!-- power mode -->
+  <string-array name="power_mode_entries">
+    <item>性能模式</item>
+    <item>均衡模式</item>
+    <item>節電模式</item>
+  </string-array>
 </resources>

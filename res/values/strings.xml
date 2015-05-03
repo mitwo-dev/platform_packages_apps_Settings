@@ -6192,4 +6192,8 @@
     <string name="hardware_keys_action_sleep">Turn screen off</string>
 
     <string name="power_mode">CPU Power Mode</string>
+    <!-- Hardware tunables - Vibrator intensity -->
+    <string name="vibrator_intensity_title">Vibrator intensity</string>
+    <string name="vibrator_warning">Values higher than %1$d are not recommended</string>
+    <string name="auto_reset_button">Reset</string>
 </resources>
